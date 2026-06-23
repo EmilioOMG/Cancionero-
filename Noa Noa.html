@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noa Noa</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 1024px;
+            height: auto; 
+            border: 2px solid black;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 724px 300px; 
+            grid-template-rows: 90px 50px 568px 60px; 
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            border: 1px solid #333;
+        }
+
+        .header {
+            grid-column: span 2;
+            background-color: hwb(0 0% 100%);       
+        }
+
+        .canciones-titulo {
+            color: rgb(255, 251, 0); 
+            font-size: 100px;  
+            font-family: arial, sans-serif;
+        }
+
+        .nav {
+            grid-column: span 2;
+            background-color: rgb(255, 217, 0);  
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;          
+            gap: 12px;              
+        }
+
+        .nav a {
+            display: block;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            color: rgb(255, 230, 0);
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            background-color: rgb(4, 2, 121);
+        }
+
+        .section {
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            
+           
+        }
+
+        .reproductor {
+            margin-top: auto;      
+        margin-left: auto;     
+        margin-right: auto;    
+        margin-bottom: 10px;   
+        width: 80%;
+        }
+
+    
+        .section h2, .section h3, .section h1{
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align:center;
+           
+        
+        }
+
+        .section h3{
+            margin-top: 20px;
+        }
+
+        .section ul{
+            margin-left: 20px;
+        }
+
+        .aside {
+            background-color: rgb(34, 1, 179);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:20px;
+            height: 568px;
+            overflow-y:hidden;
+        }
+
+        .imagen-aside {
+            width: 100%;
+            height: auto;
+            margin-bottom:auto;
+        }
+        .bloque-info{
+            margin-bottom: 15px;
+        }
+
+        .bloque-info strong{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+.footer{
+        grid-column: span 2;
+        color: rgb(251, 255, 0);
+        background-color:rgb(0, 0, 0);
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    </style>
+</head> 
+<body>
+
+<div class="contenedor">
+        
+<div class="box header"> 
+ <span class="canciones-titulo">CANCIONES</span> 
+</div>
+ <div class="box nav"> 
+ <nav>
+<ul>
+ <li><a href="thriller.html">Thriller</a></li>
+ <li><a href="Never Gonna Give You Up.html">Never Gonna Give You Up</a></li>
+<li><a href="Noa Noa.html">Noa Noa</a></li>
+<li><a href="Vuelve.html">Vuelve</a></li>
+<li><a href="Lose My mind.html">Lose My mind</a></li>
+<li><a href="Inicio.html">Inicio</a></li>
+</ul>
+</nav> </div>
+<div class="section" style="border: 1px solid #000000;">
+
+<h1>Noa Noa</h1>
+<h1> Letra </h1>
+
+<br>
+<p>Cuando quieras tú
+Divertirte más
+Y bailar sin fin
+Yo sé de un lugar
+
+Que te llevaré (vamos al Noa)
+Y disfrutarás (vamos al Noa)
+De una noche que
+Nunca olvidarás</p> </br>
+
+<br>
+<p>¿Quieres bailar esta noche?
+
+Vamos al Noa Noa, Noa Noa
+Noa Noa, Noa Noa, Noa Noa
+Noa, vamos a bailar
+
+Vamos al Noa Noa, Noa Noa
+Noa Noa, Noa Noa, Noa Noa
+Noa, vamos a bailar</p> </br>
+
+<br>
+<p>Vamos al Noa Noa, Noa Noa
+Noa Noa, Noa Noa
+Noa Noa, vamos a bailar
+
+Vamos al Noa Noa, Noa Noa
+Noa Noa, Noa Noa
+Noa Noa, vamos a bailar</p> </br>
+
+<br>
+<p>Este es un lugar de ambiente
+Donde todo es diferente
+Donde vive alegre la gente
+Escuchando esta canción. </p>
+<br>
+<p>¿Quieres bailar? (¡Sí!)
+¿Quieres cantar? (¡Sí!)
+¿Quieres gozar? (¡Sí!)
+¡Pues vamos allá!</p>
+
+
+   <audio class="reproductor" controls>
+            <source src="audios/noanoa.mp3" type="audio/mpeg">
+            </audio>
+<br>
+<p></p>
+</ul>
+</div>
+
+
+<div class="box aside">
+<img src="imagenes/pepsi.jpg" alt="Imagen de pepsi" class="imagen-aside">
+</div>
+
+
+        
+<div class="box footer">
+  
+     <span>Cantante:Juan Gabriel</span>    
+     
+
+</div>
+
+</body>
+</html>

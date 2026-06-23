@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriller</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 1024px;
+            height: auto; 
+            border: 2px solid rgb(17, 209, 0);
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 724px 300px; 
+            grid-template-rows: 90px 50px 568px 60px; 
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #009700;
+            border: 1px solid #333;
+        }
+
+        .header {
+            grid-column: span 2;
+            background-color: hwb(308 0% 67%);       
+        }
+
+        .canciones-titulo {
+            color: rgb(37, 185, 0); 
+            font-size: 100px;  
+            font-family: arial, sans-serif;
+        }
+
+        .nav {
+            grid-column: span 2;
+            background-color: rgb(58, 1, 45);  
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;          
+            gap: 12px;              
+        }
+
+        .nav a {
+            display: block;
+            background-color: rgb(253, 114, 0);
+            text-decoration: none;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            background-color: rgb(0, 230, 19);
+        }
+
+        .section {
+            background-color: rgb(255, 123, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        .reproductor {
+            margin-top: auto;      
+        margin-left: auto;     
+        margin-right: auto;    
+        margin-bottom: 10px;   
+        width: 80%;
+        }
+
+    
+        .section h2, .section h3, .section h1{
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+            text-align:center;
+           
+        
+        }
+
+        .section h3{
+            margin-top: 20px;
+        }
+
+        .section ul{
+            margin-left: 20px;
+        }
+
+        .aside {
+            background-color: rgb(119, 5, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:20px;
+            height: 568px;
+            overflow-y:hidden;
+        }
+
+        .imagen-aside {
+            width: 100%;
+            height: auto;
+            margin-bottom:auto;
+        }
+        .bloque-info{
+            margin-bottom: 15px;
+        }
+
+        .bloque-info strong{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+.footer{
+        grid-column: span 2;
+        color: rgb(30, 255, 0);
+        background-color:rgb(80, 0, 76);
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    </style>
+</head> 
+<body>
+
+<div class="contenedor">
+        
+<div class="box header"> 
+ <span class="canciones-titulo">CANCIONES</span> 
+</div>
+ <div class="box nav"> 
+ <nav>
+<ul>
+ <li><a href="thriller.html">Thriller</a></li>
+ <li><a href="Never Gonna Give You Up.html">Never Gonna Give You Up</a></li>
+<li><a href="Noa Noa.html">Noa Noa</a></li>
+<li><a href="vuelve.html">Vuelve</a></li>
+<li><a href="Lose My mind.html">Lose My mind</a></li>
+<li><a href="inicio.html">Inicio</a></li>
+</ul>
+</nav> </div>
+<div class="section" style="border: 1px solid #000000;">
+
+<h1>Thriller</h1>
+<h1> Letra </h1>
+
+<br>
+<p>It's close to midnight
+And something evil's lurking in the dark
+Under the moonlight
+You see a sight that almost stops your heart
+You try to scream
+But terror takes the sound before you make it
+You start to freeze
+As horror looks you right between the eyes
+You're paralyzed.</p> </br>
+
+<br>
+<p>'Cause this is thriller, thriller night
+And no one's gonna save you
+From the beast about to strike
+You know it's thriller, thriller night
+You're fighting for your life inside a killer
+Thriller tonight, yeah
+Ooh</p> </br>
+
+<br>
+<p> You hear the door slam
+And realize there's nowhere left to run
+You feel the cold hand
+And wonder if you'll ever see the sun
+You close your eyes
+And hope that this is just imagination (Girl)
+But all the while
+You hear a creature creepin’ up behind
+You're out of time</p> </br>
+
+
+   <audio class="reproductor" controls>
+            <source src="audios/thriller.mp3" type="audio/mpeg">
+            </audio>
+<br>
+<p></p>
+</ul>
+</div>
+
+
+<div class="box aside">
+<img src="imagenes/coca.jpg" alt="Imagen de Coca-Cola" class="imagen-aside">
+</div>
+
+
+        
+<div class="box footer">
+  
+     <span>Cantante: Michael Jackson</span>    
+     
+
+</div>
+
+</body>
+</html>

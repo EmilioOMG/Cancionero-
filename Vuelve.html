@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelve</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 1024px;
+            height: auto; 
+            border: 2px solid black;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 724px 300px; 
+            grid-template-rows: 90px 50px 568px 60px; 
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #970000;
+            border: 1px solid #333;
+        }
+
+        .header {
+            grid-column: span 2;
+            background-color: hwb(239 1% 56%);       
+        }
+
+        .canciones-titulo {
+            color: rgb(255, 255, 255); 
+            font-size: 100px;  
+            font-family: arial, sans-serif;
+        }
+
+        .nav {
+            grid-column: span 2;
+            background-color: rgb(216, 219, 1);  
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;          
+            gap: 12px;              
+        }
+
+        .nav a {
+            display: block;
+            background-color: rgb(2, 5, 201);
+            text-decoration: none;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            background-color: rgb(20, 0, 131);
+        }
+
+        .section {
+            background-color: rgb(109, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color : rgb(255, 255, 255);
+           
+        }
+
+        .reproductor {
+            margin-top: auto;      
+        margin-left: auto;     
+        margin-right: auto;    
+        margin-bottom: 10px;   
+        width: 80%;
+        }
+
+    
+        .section h2, .section h3, .section h1{
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align:center;
+           
+        
+        }
+
+        .section h3{
+            margin-top: 20px;
+        }
+
+        .section ul{
+            margin-left: 20px;
+        }
+
+        .aside {
+            background-color: rgb(167, 167, 167);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:20px;
+            height: 568px;
+            overflow-y:hidden;
+        }
+
+        .imagen-aside {
+            width: 100%;
+            height: auto;
+            margin-bottom:auto;
+        }
+        .bloque-info{
+            margin-bottom: 15px;
+        }
+
+        .bloque-info strong{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+.footer{
+        grid-column: span 2;
+        color: rgb(255, 255, 255);
+        background-color:rgb(5, 0, 73);
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    </style>
+</head> 
+<body>
+
+<div class="contenedor">
+        
+<div class="box header"> 
+ <span class="canciones-titulo">CANCIONES</span> 
+</div>
+ <div class="box nav"> 
+ <nav>
+<ul>
+ <li><a href="thriller.html">Thriller</a></li>
+ <li><a href="Never Gonna Give You Up.html">Never Gonna Give You Up</a></li>
+<li><a href="Noa Noa.html">Noa Noa</a></li>
+<li><a href="Vuelve.html">Vuelve</a></li>
+<li><a href="Lose My mind.html">Lose My mind</a></li>
+<li><a href="Inicio.html">Inicio</a></li>
+</ul>
+</nav> </div>
+<div class="section" style="border: 1px solid #000000;">
+
+<h1>Vuelve</h1>
+<h1> Letra </h1>
+
+<br>
+<p>Fotografías y cartas de amor
+Sobre la mesa
+Cien mil recuerdos de nosotros dos
+En mi cabeza. Calma el dolor de mi corazón
+Olvida lo pasado sabes que te amo solo.</p> </br>
+
+<br>
+<p>¡Vuelve!
+Se acaba mi vida si no vuelves
+Regresa a mi mundo, mi Sol
+Ven por favor
+¡Vuelve, mi amor!
+
+El horizonte se tiñe de gris
+En primavera
+La medianoche vuelve a sentir
+Sin Luna llena</p> </br>
+
+<br>
+<p> La obscuridad y la desolación
+Se apropian de mi vida
+No hay otra salida, solo
+
+¡Vuelve!
+Se acaba mi vida si no vuelves
+Regresa a mi mundo, mi Sol
+Ven, por favor
+¡Vuelve, mi amor!</p> </br>
+
+<br>
+<p>¡Vuelve!
+Extraño tus besos
+¡Vuelve a sentir como ayer!
+Una razón de vivir
+
+¡Vuelve!
+Se acaba mi vida si no vuelves
+Regresa a mi mundo mi Sol
+Ven por favor
+¡Vuelve, mi amor!</p>
+
+
+   <audio class="reproductor" controls>
+            <source src="audios/vuelve.mp3" type="audio/mpeg">
+            </audio>
+<br>
+<p></p>
+</ul>
+</div>
+
+
+<div class="box aside">
+<img src="imagenes/mcdonalds.jpg" alt="Imagen de McDonald's" class="imagen-aside">
+</div>
+
+
+        
+<div class="box footer">
+  
+     <span>Cantante:Luis Miguel</span>    
+     
+
+</div>
+
+</body>
+</html>
